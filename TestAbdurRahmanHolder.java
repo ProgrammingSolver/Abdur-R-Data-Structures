@@ -4,30 +4,11 @@ public class TestAbdurRahmanHolder
         
         AbdurRahmanHolder test = new AbdurRahmanHolder();
         
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("A");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("B");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("C");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("D");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("E");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("F");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("G");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("H");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("I");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("J");
-        System.out.println("Contains: " + test.getSize());
-        test.addToBucket("K");
-    
-        System.out.println("After adding 11 elements:");
+        // Updated For Loop - Andrew D.
+        for (int i = 0; i < 5; i++) {
+            test.addToEnd(String.format("Element %d was added.", i));
+        }
+
         test.print();
         
        //Test getter
